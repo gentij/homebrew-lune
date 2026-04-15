@@ -11,7 +11,7 @@ class Lune < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/gentij/lune/releases/download/v1.0.0/lune_darwin_amd64.tar.gz"
-      sha256 "32c1b6371abba61870468fa22efa39c1846a8981a08d1cd0197beddac650265b"
+      sha256 "b79d0144e295c3e7876d395c8c69d254a2d7e5af6aa4fa0a1c95ee0dc6a52b2c"
 
       define_method(:install) do
         bin.install "lune"
@@ -19,7 +19,7 @@ class Lune < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/gentij/lune/releases/download/v1.0.0/lune_darwin_arm64.tar.gz"
-      sha256 "79a5f4cefd5d1f23dfc5c5d8abb7a7ed493e826a8b698441b651431cf94e3bc2"
+      sha256 "584453d1b376e3b7b61b37bcfa1e9bba15919705cf6d74f6ab699b6bbed2da4b"
 
       define_method(:install) do
         bin.install "lune"
@@ -30,14 +30,14 @@ class Lune < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/gentij/lune/releases/download/v1.0.0/lune_linux_amd64.tar.gz"
-      sha256 "6af5835b463052687a56b9339f626b1e6865689c99b9d5dc74333c3c0e1b90d9"
+      sha256 "d3b06eb2e3944b85e520098bb37ee9adf5727da6a2f8c00238671344356c4eef"
       define_method(:install) do
         bin.install "lune"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/gentij/lune/releases/download/v1.0.0/lune_linux_arm64.tar.gz"
-      sha256 "ab261a300ac1c4e5e39afc3bc6b27f10bce381d557c1935cfb7048c04c53ddcf"
+      sha256 "5b09cb96dc4199416aae4831c952f2ef40ed73fe1eb9b2462da675e29f184e98"
       define_method(:install) do
         bin.install "lune"
       end
