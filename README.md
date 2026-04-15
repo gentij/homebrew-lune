@@ -1,15 +1,15 @@
-# homebrew-taskforge
+# homebrew-lune
 
-Homebrew tap for the Taskforge CLI.
+Homebrew tap for the Lune CLI.
 
 ## Usage
 
 ```sh
-brew tap gentij/taskforge
-brew install taskforge
+brew tap gentij/lune
+brew install lune
 ```
 
-## Updating the formula
+## Publishing
 
-Update `Formula/taskforge.rb` with the new version, release URLs, and sha256
-checksums for each artifact.
+This tap is managed by the main `gentij/lune` release pipeline via GoReleaser.
+The generated formula will be written to `Formula/lune.rb`.
